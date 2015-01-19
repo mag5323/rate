@@ -36,6 +36,15 @@ ajax('http://rate.bot.com.tw/Pages/Static/UIP003.zh-TW.htm', function() {
 
           currencies[row[0]] = currency;
         };
+
+        var tr = document.createElement('tr');
+        for (prop in currencies.JPY) {
+          var td = tr.appendChild(document.createElement('td'));
+          td.innerHTML = currencies.JPY[prop];
+        }
+
+        document.getElementsByTagName('tbody')[0].appendChild(tr);
+        document.getElementById('update-time').innerHTML = time.split('T').join('\t');
       });
     }
   });
