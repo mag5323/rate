@@ -48,4 +48,8 @@ ajax('http://rate.bot.com.tw/Pages/Static/UIP003.zh-TW.htm', function() {
       });
     }
   });
+
+  document.getElementById('buy').onclick = function() {
+    chrome.tabs.create({url: 'https://fctc.bot.com.tw/botfe/buy2_1.jsp'});
+  };
 });
