@@ -1,16 +1,16 @@
 {
-  'manifest_version': 2,
+  "manifest_version": 2,
 
-  'name': 'LiveRate',
-  'description': 'Showing current exchange rate from Taiwan bank',
-  'version': '1.0',
+  "name": "LiveRate",
+  "description": "Showing current exchange rate from Taiwan bank",
+  "version": "1.0",
 
-  'browser_action': {
-    'default_icon': 'icon.png',
-    'default_popup': 'popup.html'
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
   },
 
-  'permissions': [
-    'http://rate.bot.com.tw/'
+  "permissions": [
+    "http://rate.bot.com.tw/"
   ]
 }
